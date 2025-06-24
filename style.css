@@ -113,7 +113,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('escolafoto.jpeg') center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("escolafoto.jpeg");
     color: #fff;
     padding: 100px 0;
     text-align: center;
