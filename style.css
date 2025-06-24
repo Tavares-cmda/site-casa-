@@ -1,3 +1,4 @@
+
 /* Geral */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -125,10 +126,20 @@ body {
 }
 
 .hero-title {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("escolafoto.jpeg") background-position: center;
-    font-size: 3em;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("escolafoto.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* ocupa a tela toda */
 }
 
 .hero-subtitle {
