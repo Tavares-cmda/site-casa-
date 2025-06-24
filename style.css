@@ -134,12 +134,6 @@ body {
   color: white;
   text-align: center;
   padding: 100px 20px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh; /* ocupa a tela toda */
 }
 
 .hero-subtitle {
