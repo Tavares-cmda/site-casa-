@@ -1,3 +1,4 @@
+/* Seu CSS original */
 
 /* Geral */
 body {
@@ -7,6 +8,7 @@ body {
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
+    text-align: center; /* CENTRALIZA texto da página */
 }
 
 .container {
@@ -286,4 +288,31 @@ body {
     .section-title {
         font-size: 2em;
     }
+}
+
+/* NOVAS REGRAS PARA SEÇÕES ORGANIZADAS E CENTRALIZADAS */
+
+/* Centraliza texto dentro das seções */
+section {
+    background-color: #fff;
+    margin: 40px auto;
+    padding: 40px 20px;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    text-align: center; /* centraliza o texto dentro da seção */
+}
+
+/* Ajuste para títulos nas seções */
+section h1, section h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+/* Ajusta parágrafos dentro da seção */
+section p {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.1em;
 }
