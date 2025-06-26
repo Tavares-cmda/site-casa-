@@ -1,3 +1,4 @@
+/* Geral */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -5,7 +6,6 @@ body {
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
-    text-align: center; /* CENTRALIZA texto da página */
 }
 
 .container {
@@ -67,6 +67,7 @@ body {
     background-color: #007bff;
 }
 
+/* Header */
 .site-header {
     background-color: #fff;
     padding: 20px 0;
@@ -110,10 +111,52 @@ body {
     color: #007bff;
 }
 
-.hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("escolafoto.jpeg") center/cover no-repeat;
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.search-bar button[type="submit"] {
+    background-color: #007bff;
     color: #fff;
-    padding: 100px 20px;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.search-bar button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.cart-icon a {
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.cart-icon a:hover {
+    color: #007bff;
+}
+
+.cart-icon i {
+    margin-right: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),  url("escolafoto.jpeg") center/cover no-repeat;
+    color: #fff;
+    padding: 100px 0;
     text-align: center;
 }
 
@@ -123,14 +166,9 @@ body {
 }
 
 .hero-title {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("escolafoto.jpeg") center/cover no-repeat;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  
-  color: white;
-  text-align: center;
-  padding: 100px 20px;
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero-subtitle {
@@ -139,20 +177,20 @@ body {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-/* Featured Images */
-.featured-images {
+/* Featured Products */
+.featured-products {
     padding: 50px 0;
     background-color: #fff;
 }
 
-.image-grid {
+.product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 100px;
-    margin-top: 100px;
+    gap: 30px;
+    margin-top: 30px;
 }
 
-.image-card {
+.product-card {
     background-color: #f9f9f9;
     border-radius: 8px;
     overflow: hidden;
@@ -160,31 +198,32 @@ body {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.image-card:hover {
+.product-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.image-card img {
+.product-card img {
     width: 100%;
     display: block;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 1 / 1; /* Manter proporção quadrada */
     object-fit: cover;
 }
 
-.image-card h3 {
+.product-card h3 {
     font-size: 1.2em;
     margin: 15px 10px;
     text-align: center;
 }
 
-.image-card .description {
-    font-size: 1em;
+.product-card .price {
+    font-weight: bold;
+    color: #007bff;
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
-.image-card button {
+.product-card button {
     width: 100%;
     padding: 10px;
     border: none;
@@ -195,10 +234,11 @@ body {
     border-radius: 0 0 8px 8px;
 }
 
-.image-card button:hover {
+.product-card button:hover {
     background-color: #ddd;
 }
 
+/* Call to Action */
 .call-to-action {
     background-color: #007bff;
     color: #fff;
@@ -220,6 +260,7 @@ body {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
+/* Footer */
 .site-footer {
     background-color: #333;
     color: #fff;
@@ -227,6 +268,52 @@ body {
     padding: 20px 0;
     font-size: 0.9em;
 }
+
+/* Recursos Avançados de CSS */
+
+/* Transições suaves em vários elementos */
+.site-header a,
+.button,
+.product-card {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Animação sutil no título da seção de produtos em destaque */
+.featured-products .section-title {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Efeito de gradiente sutil nos cards de produto */
+.product-card {
+    background: linear-gradient(135deg, #f9f9f9 0%, #eee 100%);
+}
+
+/* Uso de Flexbox para alinhar itens no header */
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Uso de Grid para layout dos produtos em destaque */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+/* Media Queries para Responsividade */
 @media (max-width: 768px) {
     .site-header .container {
         flex-direction: column;
@@ -245,7 +332,21 @@ body {
         margin: 10px 0;
     }
 
-    .image-grid {
+    .search-bar {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .search-bar input[type="text"] {
+        border-radius: 5px;
+    }
+
+    .search-bar button[type="submit"] {
+        border-radius: 5px;
+        margin-left: 0;
+    }
+
+    .product-grid {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
 
@@ -279,26 +380,4 @@ body {
     .section-title {
         font-size: 2em;
     }
-}
-
-section {
-    background-color: #fff;
-    margin: 40px auto;
-    padding: 40px 20px;
-    max-width: 900px;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    text-align: center; /* centraliza o texto dentro da seção */
-}
-
-section h1, section h2 {
-    color: #007bff;
-    margin-bottom: 20px;
-}
-
-section p {
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 1.1em;
 }
