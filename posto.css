@@ -1,11 +1,11 @@
-/* Reset de margens e padding */
+/* Reset básico */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Estilo geral da página */
+/* Corpo geral */
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f4f4f4;
@@ -13,17 +13,17 @@ body {
   line-height: 1.6;
 }
 
-/* Estilo do cabeçalho */
+/* Cabeçalho estilo Kraemer */
 .site-header {
-  background-color: #2e7d32;
-  color: #fff;
+  background-color: #004d40; /* Verde escuro como o do Kraemer */
   padding: 20px 0;
+  color: white;
 }
 
-.container {
-  width: 80%;
-  margin: 0 auto;
-  max-width: 1200px;
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
@@ -36,8 +36,6 @@ body {
 .main-nav ul {
   list-style: none;
   display: flex;
-  justify-content: flex-end;
-  margin-top: 10px;
 }
 
 .main-nav ul li {
@@ -45,19 +43,19 @@ body {
 }
 
 .main-nav ul li a {
-  text-decoration: none;
   color: #fff;
+  text-decoration: none;
   font-size: 18px;
-  padding: 5px 10px;
-  border-radius: 5px;
-  transition: background-color 0.3s;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
 }
 
 .main-nav ul li a:hover {
-  background-color: #333;
+  background-color: #00695c;
 }
 
-/* Estilo do conteúdo principal */
+/* Conteúdo principal */
 .content {
   padding: 50px 0;
   background-color: #fff;
@@ -66,8 +64,8 @@ body {
 
 h1 {
   font-size: 36px;
-  color: #333;
   margin-bottom: 20px;
+  color: #004d40;
 }
 
 p, li {
