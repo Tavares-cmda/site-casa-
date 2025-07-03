@@ -3,8 +3,72 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Capela São Cristóvão - Bairro São Cristóvão, Capanema</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Igreja - Bairro São Cristóvão</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+    .site-header {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 20px 0;
+    }
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      max-width: 1200px;
+    }
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #fff;
+      text-decoration: none;
+    }
+    .main-nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+    }
+    .main-nav ul li {
+      margin-left: 20px;
+    }
+    .main-nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 18px;
+      padding: 5px 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    .main-nav ul li a:hover {
+      background-color: #333;
+    }
+    .content {
+      padding: 50px 0;
+      background-color: #fff;
+      margin-top: 20px;
+    }
+    h1 {
+      font-size: 36px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+    footer {
+      background-color: #2e7d32;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -13,134 +77,25 @@
       <nav class="main-nav">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="https://www.google.com/maps/place/Bairro+São+Cristóvão/" target="_blank">Localização</a></li>
-          <li><a href="sobre.html">História de Capanema e do Bairro São Cristóvão</a></li>
+          <li><a href="https://www.google.com/maps/place/Bairro+São+Cristóvão/" target="_blank" rel="noopener noreferrer">Localização</a></li>
+          <li><a href="sobre.html">História</a></li>
         </ul>
       </nav>
     </div>
   </header>
-  <style>
-    /* Reset de margens e padding */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
 
-    /* Estilo do corpo */
-    body {
-      font-family: 'Arial', sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
-      line-height: 1.6;
-      padding: 0 20px;
-    }
-
-    /* Estilo do cabeçalho */
-    header {
-      background-color: #4CAF50; /* Cor ajustada */
-      color: #fff;
-      text-align: center;
-      padding: 20px 0;
-      border-radius: 8px;
-      margin-top: 20px;
-    }
-
-    header h1 {
-      font-size: 2.5em;
-      font-weight: bold;
-    }
-
-    /* Estilos para o conteúdo principal */
-    section {
-      max-width: 960px;
-      margin: 20px auto;
-      padding: 20px;
-      background-color: #fff;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    h2 {
-      font-size: 2em;
-      color: #333; /* Cor ajustada */
-      margin-bottom: 20px;
-    }
-
-    p {
-      font-size: 1.1em;
-      color: #555;
-      margin-bottom: 20px;
-      text-align: justify;
-    }
-
-    /* Rodapé */
-    footer {
-      background-color: #2e7d32; /* Cor ajustada */
-      color: #fff;
-      text-align: center;
-      padding: 15px 0;
-      position: relative;
-      bottom: 0;
-      width: 100%;
-      margin-top: 30px;
-      border-radius: 8px;
-    }
-
-    footer p {
-      font-size: 1em;
-    }
-
-    /* Efeito no rodapé */
-    footer p:hover {
-      color: #f39c12;
-      cursor: pointer;
-    }
-
-    /* Responsividade */
-    @media (max-width: 768px) {
-      body {
-        padding: 10px;
-      }
-      header h1 {
-        font-size: 2em;
-      }
-      section {
-        padding: 15px;
-      }
-    }
-  </style>
-
-  <header>
-    <h1>Capela São Cristóvão - Bairro São Cristóvão, Capanema</h1>
-  </header>
-
-  <section>
-    <h2>Sobre a Capela São Cristóvão</h2>
-    <p>A **Capela São Cristóvão** está localizada no município de **Capanema**, no estado do **Paraná**, e é um dos pontos religiosos mais importantes da cidade, sendo um símbolo de fé e tradição para os moradores da região.</p>
-
-    <h2>História e Significado</h2>
-    <p>A Capela São Cristóvão tem uma longa trajetória ligada à religiosidade local, com uma história que remonta à fundação do bairro São Cristóvão, que, como o próprio nome indica, tem uma forte conexão com o santo padroeiro **São Cristóvão**. São Cristóvão é tradicionalmente conhecido como o santo protetor dos motoristas e viajantes, o que reflete a devoção da comunidade para com esse santo, que é considerado um símbolo de proteção e força.</p>
-
-    <p>A capela foi construída para atender às necessidades espirituais dos moradores da região, oferecendo um espaço para a realização de missas, batizados, casamentos e outras celebrações religiosas. Ao longo dos anos, a Capela São Cristóvão tem sido um local de encontro para os fiéis da cidade, promovendo não apenas a prática religiosa, mas também ações de solidariedade e eventos comunitários.</p>
-
-    <h2>A Capela e a Comunidade</h2>
-    <p>A Capela São Cristóvão é um centro comunitário para os fiéis da cidade. Além das celebrações litúrgicas, a capela também promove atividades sociais, culturais e de apoio à comunidade. Os eventos religiosos, como a **Festa de São Cristóvão**, são muito aguardados pelos habitantes locais, sendo uma oportunidade para celebrar a fé, fortalecer os laços de amizade e solidariedade, e manter vivas as tradições culturais e religiosas do município.</p>
-
-    <h2>Arquitetura e Localização</h2>
-    <p>A arquitetura da Capela São Cristóvão é simples, mas ao mesmo tempo acolhedora. O ambiente transmite serenidade, com um design que favorece a reflexão e o momento de oração. A capela está situada em uma área tranquila de Capanema, permitindo que os fiéis se conectem com a espiritualidade em meio ao sossego da natureza ao redor. Sua localização no bairro São Cristóvão faz dela um ponto de referência para os moradores da região, tanto em aspectos religiosos quanto culturais.</p>
-
-    <h2>A Capela e o Turismo Religioso</h2>
-    <p>Embora Capanema seja mais conhecida por suas atividades rurais, como a produção de grãos e o turismo ecológico, a Capela São Cristóvão também se tornou um ponto de interesse para os visitantes que desejam conhecer a história religiosa da cidade. Pessoas de outras localidades que visitam o município, muitas vezes, fazem questão de conhecer a capela e participar das celebrações religiosas realizadas nela.</p>
-
-    <p>Além disso, a capela é um local tranquilo, ideal para momentos de paz e reflexão, o que atrai tanto os fiéis quanto aqueles em busca de um ambiente calmo e espiritual.</p>
-
-    <h2>Conclusão</h2>
-    <p>A **Capela São Cristóvão** não é apenas um espaço religioso, mas um pilar cultural e social dentro de **Capanema**, Paraná. Ela representa a força da fé local e serve como um elo entre o passado e o presente da cidade. Para os moradores e devotos, a capela é um símbolo de proteção, união e espiritualidade, essencial para a manutenção das tradições e da identidade comunitária do município.</p>
-  </section>
+  <main class="content">
+    <div class="container">
+      <h1>Igreja do Bairro São Cristóvão</h1>
+      <p>A igreja local é um ponto de referência para a comunidade, oferecendo cultos, eventos e ações sociais que fortalecem os vínculos entre os moradores.</p>
+      <p>Além de seu valor espiritual, a igreja contribui para a história e cultura do bairro, sendo um espaço de acolhimento e participação comunitária.</p>
+    </div>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Capela São Cristóvão | Capanema, Paraná</p>
+    <div class="container">
+      <p>&copy; 2025 Bairro São Cristóvão - Todos os direitos reservados.</p>
+    </div>
   </footer>
 </body>
 </html>
