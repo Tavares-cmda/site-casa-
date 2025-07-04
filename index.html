@@ -4,7 +4,248 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Bairro São Cristóvão</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Reset e box-sizing */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #e0f2f1, #80cbc4);
+      color: #2c3e50;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* HEADER */
+    header.site-header {
+      background-color: #00796b;
+      padding: 20px 0;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #e0f7fa;
+      letter-spacing: 1.5px;
+    }
+
+    nav.main-nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 10px;
+      gap: 25px;
+    }
+
+    nav.main-nav ul li a {
+      font-weight: 600;
+      font-size: 1.1rem;
+      padding: 8px 18px;
+      border-radius: 25px;
+      background-color: #004d40;
+      color: #a7ffeb;
+      box-shadow: 0 2px 5px rgba(0,77,64,0.6);
+      transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+      display: inline-block;
+    }
+
+    nav.main-nav ul li a:hover {
+      background-color: #a7ffeb;
+      color: #004d40;
+      box-shadow: 0 4px 10px rgba(0,77,64,0.8);
+    }
+
+    /* HERO SECTION */
+    section.hero {
+      background: #004d40;
+      color: #e0f2f1;
+      padding: 60px 0 80px;
+      text-align: center;
+      border-radius: 0 0 40px 40px;
+      box-shadow: 0 8px 20px rgba(0, 77, 64, 0.5);
+      margin-bottom: 40px;
+    }
+
+    .hero-title {
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+    }
+
+    .hero-subtitle {
+      font-size: 1.3rem;
+      font-weight: 400;
+      letter-spacing: 0.03em;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    }
+
+    /* FEATURED IMAGES */
+    section.featured-images {
+      margin-bottom: 60px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.4rem;
+      font-weight: 700;
+      margin-bottom: 30px;
+      color: #004d40;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.15);
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .image-card {
+      background-color: #ffffffdd;
+      border-radius: 20px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      padding: 15px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .image-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+    }
+
+    .image-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 15px;
+      margin-bottom: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .image-card h3 {
+      font-size: 1.4rem;
+      color: #00796b;
+      margin-bottom: 8px;
+      font-weight: 700;
+    }
+
+    .image-card .description {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 15px;
+      min-height: 50px;
+    }
+
+    .button {
+      padding: 10px 22px;
+      font-weight: 600;
+      border-radius: 30px;
+      cursor: pointer;
+      user-select: none;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      border: none;
+      display: inline-block;
+      text-decoration: none;
+    }
+
+    .button.secondary {
+      background-color: #004d40;
+      color: #a7ffeb;
+      box-shadow: 0 4px 8px rgba(0,77,64,0.4);
+    }
+
+    .button.secondary:hover {
+      background-color: #a7ffeb;
+      color: #004d40;
+      box-shadow: 0 6px 15px rgba(0,77,64,0.6);
+    }
+
+    /* CALL TO ACTION */
+    section.call-to-action {
+      background: #00796b;
+      color: #e0f2f1;
+      padding: 50px 20px;
+      border-radius: 25px;
+      text-align: center;
+      margin-bottom: 60px;
+      box-shadow: 0 8px 20px rgba(0, 77, 64, 0.6);
+    }
+
+    section.call-to-action h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      font-weight: 700;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    }
+
+    section.call-to-action p {
+      font-size: 1.1rem;
+      margin-bottom: 25px;
+      letter-spacing: 0.02em;
+    }
+
+    section.call-to-action .button.primary {
+      background-color: #a7ffeb;
+      color: #004d40;
+      font-weight: 700;
+      font-size: 1.1rem;
+      padding: 14px 36px;
+      box-shadow: 0 6px 15px rgba(0, 77, 64, 0.5);
+    }
+
+    section.call-to-action .button.primary:hover {
+      background-color: #004d40;
+      color: #a7ffeb;
+      box-shadow: 0 8px 20px rgba(0, 77, 64, 0.7);
+    }
+
+    /* FOOTER */
+    footer.site-footer {
+      background-color: #004d40;
+      color: #a7ffeb;
+      text-align: center;
+      padding: 20px 0;
+      font-weight: 600;
+      box-shadow: inset 0 4px 8px rgba(0,0,0,0.15);
+    }
+
+    /* Responsividade */
+    @media(max-width: 600px) {
+      .hero-title {
+        font-size: 2rem;
+      }
+      nav.main-nav ul {
+        gap: 15px;
+      }
+      .image-card img {
+        height: 140px;
+      }
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -13,7 +254,7 @@
       <nav class="main-nav">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="https://www.google.com/maps/place/Bairro+São+Cristóvão/" target="_blank">Localização</a></li>
+          <li><a href="https://www.google.com/maps/place/Bairro+São+Cristóvão/" target="_blank" rel="noopener noreferrer">Localização</a></li>
           <li><a href="sobre.html">História de Capanema e do Bairro</a></li>
         </ul>
       </nav>
@@ -72,7 +313,7 @@
           
            <div class="image-card">
             <img src="farmacia.jpeg" alt="Farmácia São Cristovão" />
-            <h3>Farmácia São Cristovãoz</h3>
+            <h3>Farmácia São Cristóvão</h3>
             <p class="description">Medicamentos acessíveis, SUS, orientação, remédios gratuitos, saúde.</p>
             <a href="farmacia.html" class="button secondary" >Ver sobre</a>
           </div>
@@ -92,7 +333,7 @@
       <div class="container">
         <h2>Precisa de ajuda para encontrar o melhor lugar para morar?</h2>
         <p>Entre em contato com nossos especialistas e receba atendimento personalizado.</p>
-        <a href="https://web.whatsapp.com/" class="button primary" target="_blank">Fale Conosco</a>
+        <a href="https://web.whatsapp.com/" class="button primary" target="_blank" rel="noopener noreferrer">Fale Conosco</a>
       </div>
     </section>
   </main>
