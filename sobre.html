@@ -1,109 +1,227 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bairro São Cristóvão</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bairro São Cristóvão - História</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #e0f2f1, #80cbc4);
+      color: #2c3e50;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px 0;
+    }
+
+    header.site-header {
+      background-color: #00796b;
+      padding: 20px 0;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    nav.main-nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    nav.main-nav ul li a {
+      font-weight: 600;
+      font-size: 1.1rem;
+      padding: 8px 18px;
+      border-radius: 25px;
+      background-color: #004d40;
+      color: #a7ffeb;
+      box-shadow: 0 2px 5px rgba(0,77,64,0.6);
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    nav.main-nav ul li a:hover {
+      background-color: #a7ffeb;
+      color: #004d40;
+    }
+
+    .hero {
+      background-color: #004d40;
+      color: #e0f2f1;
+      text-align: center;
+      padding: 60px 20px;
+      border-radius: 0 0 40px 40px;
+      box-shadow: 0 8px 20px rgba(0, 77, 64, 0.5);
+    }
+
+    .hero-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .hero-subtitle {
+      font-size: 1.2rem;
+    }
+
+    section {
+      background-color: #ffffffdd;
+      margin: 30px 0;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h1, h2 {
+      color: #004d40;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 15px;
+      text-align: justify;
+    }
+
+    section.call-to-action {
+      background: #00796b;
+      color: #e0f2f1;
+      text-align: center;
+      padding: 50px 20px;
+      border-radius: 25px;
+      margin: 40px 0;
+    }
+
+    .button.primary {
+      background-color: #a7ffeb;
+      color: #004d40;
+      font-weight: bold;
+      padding: 14px 32px;
+      border: none;
+      border-radius: 30px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+      transition: 0.3s;
+      box-shadow: 0 6px 12px rgba(0,77,64,0.4);
+    }
+
+    .button.primary:hover {
+      background-color: #004d40;
+      color: #a7ffeb;
+    }
+
+    footer.site-footer {
+      background-color: #004d40;
+      color: #a7ffeb;
+      text-align: center;
+      padding: 20px 0;
+      font-weight: 600;
+    }
+
+    @media (max-width: 600px) {
+      .hero-title { font-size: 2rem; }
+    }
+  </style>
 </head>
 <body>
-    <header class="site-header">
-        <div class="container">
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="https://www.google.com/maps/place/Bairro+S%C3%A3o+Crist%C3%B3v%C3%A3o/@-25.6571765,-53.8100384,837m/data=!3m1!1e3!4m6!3m5!1s0x94f1230d1a32b821:0x901b845b82654cef!8m2!3d-25.6576947!4d-53.8101404!16s%2Fg%2F11qb5lqk30?entry=ttu&g_ep=EgoyMDI1MDYxNS4wIKXMDSoASAFQAw%3D%3D">Localização</a></li>
-                    <li><a href="sobre.html">Historia de Capenema e do Bairro São Cristovão </a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <header class="site-header">
+    <div class="container">
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="https://www.google.com/maps/place/Bairro+São+Cristóvão/" target="_blank">Localização</a></li>
+          <li><a href="sobre.html">História de Capanema e do Bairro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <main class="site-main">
-        <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <h2 class="hero-title">Encontre aqui o melhor lugar para se viver!</h2>
-                    <p class="hero-subtitle">Qualidade, variedade e os melhores preços da região.</p>
-                </div>
-            </div>
-        </section>
+  <main class="site-main">
+    <section class="hero">
+      <div class="container">
+        <h2 class="hero-title">História de Capanema e do Bairro São Cristóvão</h2>
+        <p class="hero-subtitle">Conheça o passado e o crescimento da cidade e do bairro</p>
+      </div>
+    </section>
 
-  <section>
-  <h1>História da Cidade de Capanema – Paraná</h1>
+    <section>
+      <h1>História da Cidade de Capanema – Paraná</h1>
+      <h2>Fundação e Colonização</h2>
+      <p>
+        A cidade de <strong>Capanema</strong>, localizada no <strong>Sudoeste do Paraná</strong>, foi oficialmente fundada em <strong>14 de dezembro de 1952</strong>, mas sua história começou bem antes, com os processos de colonização e ocupação das terras da região.
+      </p>
+      <p>
+        Por volta da <strong>década de 1940</strong>, migrantes vindos principalmente do <strong>Rio Grande do Sul</strong> começaram a ocupar o território. Eram, em sua maioria, descendentes de <strong>imigrantes alemães, italianos e poloneses</strong>, em busca de novas oportunidades e terras férteis.
+      </p>
+      <p>
+        O nome <strong>"Capanema"</strong> é uma homenagem a <strong>Afonso de Capanema</strong>, engenheiro e político brasileiro do século XIX.
+      </p>
 
-  <h2>Fundação e Colonização</h2>
-  <p>
-    A cidade de <strong>Capanema</strong>, localizada no <strong>Sudoeste do Paraná</strong>, foi oficialmente fundada em <strong>14 de dezembro de 1952</strong>, mas sua história começou bem antes, com os processos de colonização e ocupação das terras da região.
-  </p>
-  <p>
-    Por volta da <strong>década de 1940</strong>, migrantes vindos principalmente do <strong>Rio Grande do Sul</strong> começaram a ocupar o território. Eram, em sua maioria, descendentes de <strong>imigrantes alemães, italianos e poloneses</strong>, em busca de novas oportunidades e terras férteis.
-  </p>
-  <p>
-    O nome <strong>"Capanema"</strong> é uma homenagem a <strong>Afonso de Capanema</strong>, engenheiro e político brasileiro do século XIX que atuou na região.
-  </p>
+      <h2>Desenvolvimento Econômico</h2>
+      <p>
+        A economia era essencialmente agrícola. A produção de <strong>milho, feijão, trigo, soja e mandioca</strong> sustentava os moradores. A exploração madeireira também teve destaque.
+      </p>
+      <p>
+        Com o tempo, surgiram <strong>cooperativas agrícolas, agroindústrias e comércios locais</strong>. Hoje, a cidade possui uma economia diversificada, com destaque para o setor agrícola e de serviços.
+      </p>
 
-  <h2>Desenvolvimento Econômico</h2>
-  <p>
-    Nos primeiros anos, a economia era essencialmente agrícola. A produção de <strong>milho, feijão, trigo, soja e mandioca</strong> sustentava os moradores. A exploração madeireira também teve destaque.
-  </p>
-  <p>
-    Com o tempo, surgiram <strong>cooperativas agrícolas, agroindústrias e comércios locais</strong>. Hoje, a cidade possui uma economia diversificada, com destaque para o setor agrícola e de serviços.
-  </p>
+      <h2>Infraestrutura e Sociedade</h2>
+      <p>
+        Capanema possui escolas, universidades, hospital municipal, transporte público, pavimentação urbana e eventos culturais. É reconhecida por sua <strong>qualidade de vida</strong> e segurança.
+      </p>
+    </section>
 
-  <h2>Infraestrutura e Sociedade</h2>
-  <p>
-    Capanema possui escolas, universidades, hospital municipal, transporte público, pavimentação urbana e eventos culturais. É reconhecida por sua <strong>qualidade de vida</strong> e segurança.
-  </p>
-</section>
+    <section>
+      <h1>História do Bairro São Cristóvão</h1>
+      <h2>Surgimento do Bairro</h2>
+      <p>
+        O <strong>bairro São Cristóvão</strong> surgiu na <strong>década de 1990</strong>, com loteamentos populares próximos ao terminal rodoviário. Seu nome homenageia <strong>São Cristóvão</strong>, padroeiro dos motoristas.
+      </p>
 
-<section>
-  <h1>História do Bairro São Cristóvão – Capanema (PR)</h1>
+      <h2>Desenvolvimento e Urbanização</h2>
+      <p>
+        Inicialmente com poucas casas e ruas de terra, o bairro recebeu melhorias como <strong>água tratada, energia, escola, posto de saúde</strong> e <strong>pavimentação</strong>. Em <strong>2018</strong>, recebeu recapeamento asfáltico em ruas principais.
+      </p>
 
-  <h2>Surgimento do Bairro</h2>
-  <p>
-    O <strong>bairro São Cristóvão</strong> surgiu na <strong>década de 1990</strong>, por meio de loteamentos populares próximos ao terminal rodoviário. Seu nome homenageia <strong>São Cristóvão</strong>, padroeiro dos motoristas.
-  </p>
+      <h2>Comunidade e Religião</h2>
+      <p>
+        A <strong>Capela São Cristóvão</strong> é símbolo religioso do bairro, com missas, bênçãos de veículos e festas comunitárias. A devoção ao padroeiro reforça a identidade local.
+      </p>
 
-  <h2>Desenvolvimento e Urbanização</h2>
-  <p>
-    Inicialmente com poucas casas e ruas de terra, o bairro recebeu melhorias como <strong>água tratada, energia, escola, posto de saúde</strong> e <strong>pavimentação</strong>. Em <strong>2018</strong>, recebeu recapeamento asfáltico em ruas principais com recursos parlamentares.
-  </p>
+      <h2>Vida Atual</h2>
+      <p>
+        Hoje, o São Cristóvão é um bairro tranquilo, estruturado e com comércio local ativo. Representa um exemplo de crescimento urbano bem planejado.
+      </p>
+    </section>
 
-  <h2>Comunidade e Religião</h2>
-  <p>
-    A <strong>Capela São Cristóvão</strong> é um símbolo do bairro, com missas, bênçãos de veículos e festas comunitárias. A devoção ao padroeiro dos motoristas reforça a identidade do bairro.
-  </p>
+    <section class="call-to-action">
+      <div class="container">
+        <h2>Precisa de ajuda para encontrar o melhor lugar para viver?</h2>
+        <p>Fale com nossos especialistas e receba orientações personalizadas.</p>
+        <a href="https://web.whatsapp.com/" target="_blank" class="button primary">Fale Conosco</a>
+      </div>
+    </section>
+  </main>
 
-  <h2>Vida Atual no Bairro</h2>
-  <p>
-    Atualmente, o São Cristóvão é um bairro tranquilo e bem estruturado, com comércios locais e boa qualidade de vida. É um exemplo de crescimento urbano bem-sucedido.
-  </p>
-</section>
-
-<section>
-  <h2>Conclusão</h2>
-  <p>
-    O município de <strong>Capanema</strong> destaca-se por seu crescimento sustentado na agricultura e cultura dos imigrantes. Já o <strong>bairro São Cristóvão</strong> simboliza a expansão urbana planejada, com forte ligação religiosa e comunitária.
-  </p>
-</section>
-
-
-        <section class="call-to-action">
-            <div class="container">
-                <h2>Precisa de ajuda para encontrar o melhor lugar para construir sua casa?</h2>
-                <p>Entre em contato com nossos especialistas e receba uma localização e um orçamento personalizado.</p>
-                <a href="#" class="button primary">Fale Conosco</a>
-            </div>
-        </section>
-    </main>
-
-    <footer class="site-footer">
-        <div class="container">
-            <p>&copy; 2025 Bairro São Cristóvão. Todos os direitos reservados.</p>
-        </div>
-    </footer>
-
-    <script src="https://kit.fontawesome.com/your_fontawesome_kit.js" crossorigin="anonymous"></script>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Bairro São Cristóvão. Todos os direitos reservados.</p>
+    </div>
+  </footer>
 </body>
 </html>
