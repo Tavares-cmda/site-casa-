@@ -15,10 +15,11 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: linear-gradient(135deg, #e0f2f1, #80cbc4);
       color: #2c3e50;
-      line-height: 1.6;
+      line-height: 1.8;
       display: flex;
       flex-direction: column;
       min-height: 100vh;
+      text-align: center;
     }
 
     a {
@@ -66,20 +67,19 @@
     .hero {
       background-color: #004d40;
       color: #e0f2f1;
-      text-align: center;
       padding: 60px 20px;
       border-radius: 0 0 40px 40px;
       box-shadow: 0 8px 20px rgba(0, 77, 64, 0.5);
     }
 
     .hero-title {
-      font-size: 2.5rem;
+      font-size: 2.8rem;
       font-weight: bold;
       margin-bottom: 10px;
     }
 
     .hero-subtitle {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
     }
 
     main.site-main {
@@ -87,31 +87,31 @@
     }
 
     section {
-      background-color: #ffffffdd;
-      margin: 30px 0;
-      padding: 30px;
+      background-color: #ffffffee;
+      margin: 40px 0;
+      padding: 40px;
       border-radius: 15px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
     h1, h2 {
       color: #004d40;
-      text-align: center;
       margin-bottom: 20px;
     }
 
     p {
-      margin-bottom: 15px;
-      text-align: justify;
+      margin-bottom: 20px;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     section.call-to-action {
       background: #00796b;
       color: #e0f2f1;
-      text-align: center;
       padding: 50px 20px;
       border-radius: 25px;
-      margin: 40px 0;
+      margin: 50px 0;
     }
 
     .button.primary {
@@ -145,6 +145,10 @@
       .hero-title {
         font-size: 2rem;
       }
+
+      section {
+        padding: 25px;
+      }
     }
   </style>
 </head>
@@ -165,44 +169,64 @@
     <section class="hero">
       <div class="container">
         <h2 class="hero-title">História de Capanema e do Bairro São Cristóvão</h2>
-        <p class="hero-subtitle">Conheça o passado e o crescimento da cidade e do bairro</p>
+        <p class="hero-subtitle">Descubra como essa comunidade cresceu ao longo do tempo</p>
       </div>
     </section>
 
     <section>
-      <h1>História da Cidade de Capanema – Paraná</h1>
-      <h2>Fundação e Colonização</h2>
-      <p>A cidade de <strong>Capanema</strong>, localizada no <strong>Sudoeste do Paraná</strong>, foi oficialmente fundada em <strong>14 de dezembro de 1952</strong>, mas sua história começou bem antes, com os processos de colonização e ocupação das terras da região.</p>
-      <p>Por volta da <strong>década de 1940</strong>, migrantes vindos principalmente do <strong>Rio Grande do Sul</strong> começaram a ocupar o território. Eram, em sua maioria, descendentes de <strong>imigrantes alemães, italianos e poloneses</strong>, em busca de novas oportunidades e terras férteis.</p>
-      <p>O nome <strong>"Capanema"</strong> é uma homenagem a <strong>Afonso de Capanema</strong>, engenheiro e político brasileiro do século XIX.</p>
+      <h1>Capanema – Paraná</h1>
+      <h2>Origens e Colonização</h2>
+      <p>
+        Capanema, situada no Sudoeste do Paraná, foi oficialmente fundada em 14 de dezembro de 1952. No entanto, sua história começou bem antes, com a chegada dos primeiros colonizadores.
+      </p>
+      <p>
+        A partir da década de 1940, migrantes vindos do Rio Grande do Sul — descendentes de imigrantes alemães, italianos e poloneses — se estabeleceram na região em busca de terras férteis e novas oportunidades.
+      </p>
+      <p>
+        O nome “Capanema” é uma homenagem ao engenheiro e político Afonso de Capanema, figura importante do século XIX.
+      </p>
 
-      <h2>Desenvolvimento Econômico</h2>
-      <p>A economia era essencialmente agrícola. A produção de <strong>milho, feijão, trigo, soja e mandioca</strong> sustentava os moradores. A exploração madeireira também teve destaque.</p>
-      <p>Com o tempo, surgiram <strong>cooperativas agrícolas, agroindústrias e comércios locais</strong>. Hoje, a cidade possui uma economia diversificada, com destaque para o setor agrícola e de serviços.</p>
+      <h2>Economia e Crescimento</h2>
+      <p>
+        Inicialmente baseada na agricultura (milho, feijão, trigo, soja e mandioca) e na extração de madeira, a economia capanemense evoluiu com o surgimento de cooperativas, agroindústrias e comércio local.
+      </p>
+      <p>
+        Hoje, Capanema possui uma economia diversificada, mantendo o setor agrícola forte e expandindo-se em serviços e indústria.
+      </p>
 
-      <h2>Infraestrutura e Sociedade</h2>
-      <p>Capanema possui escolas, universidades, hospital municipal, transporte público, pavimentação urbana e eventos culturais. É reconhecida por sua <strong>qualidade de vida</strong> e segurança.</p>
+      <h2>Infraestrutura e Qualidade de Vida</h2>
+      <p>
+        A cidade conta com escolas, universidades, hospital municipal, transporte público e eventos culturais. É reconhecida por oferecer qualidade de vida e segurança aos moradores.
+      </p>
     </section>
 
     <section>
-      <h1>História do Bairro São Cristóvão</h1>
-      <h2>Surgimento do Bairro</h2>
-      <p>O <strong>bairro São Cristóvão</strong> surgiu na <strong>década de 1990</strong>, com loteamentos populares próximos ao terminal rodoviário. Seu nome homenageia <strong>São Cristóvão</strong>, padroeiro dos motoristas.</p>
+      <h1>Bairro São Cristóvão</h1>
+      <h2>Como Surgiu</h2>
+      <p>
+        O bairro São Cristóvão começou a se formar nos anos 1990, com loteamentos populares nas proximidades do terminal rodoviário. Seu nome é uma homenagem ao padroeiro dos motoristas.
+      </p>
 
-      <h2>Desenvolvimento e Urbanização</h2>
-      <p>Inicialmente com poucas casas e ruas de terra, o bairro recebeu melhorias como <strong>água tratada, energia, escola, posto de saúde</strong> e <strong>pavimentação</strong>. Em <strong>2018</strong>, recebeu recapeamento asfáltico em ruas principais.</p>
+      <h2>Urbanização e Melhorias</h2>
+      <p>
+        Com o passar dos anos, o bairro passou por transformações importantes: recebeu água encanada, energia elétrica, escola, posto de saúde e pavimentação. Em 2018, suas ruas principais foram recapeadas.
+      </p>
 
-      <h2>Comunidade e Religião</h2>
-      <p>A <strong>Capela São Cristóvão</strong> é símbolo religioso do bairro, com missas, bênçãos de veículos e festas comunitárias. A devoção ao padroeiro reforça a identidade local.</p>
+      <h2>Religiosidade e Comunidade</h2>
+      <p>
+        A Capela São Cristóvão se tornou símbolo da fé e da união da comunidade. Missas, bênçãos de veículos e festas comunitárias fortalecem a identidade local.
+      </p>
 
-      <h2>Vida Atual</h2>
-      <p>Hoje, o São Cristóvão é um bairro tranquilo, estruturado e com comércio local ativo. Representa um exemplo de crescimento urbano bem planejado.</p>
+      <h2>São Cristóvão Hoje</h2>
+      <p>
+        Atualmente, o bairro é estruturado, tranquilo e possui comércio ativo. É um exemplo de urbanização bem-sucedida, valorizando a convivência e o bem-estar.
+      </p>
     </section>
 
     <section class="call-to-action">
       <div class="container">
-        <h2>Precisa de ajuda para encontrar o melhor lugar para viver?</h2>
-        <p>Fale com nossos especialistas e receba orientações personalizadas.</p>
+        <h2>Quer morar bem em Capanema?</h2>
+        <p>Entre em contato com nossos especialistas e encontre o bairro ideal para você.</p>
         <a href="https://web.whatsapp.com/" target="_blank" class="button primary">Fale Conosco</a>
       </div>
     </section>
