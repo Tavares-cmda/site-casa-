@@ -3,40 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Bairro São Cristóvão</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header class="site-header">
-    <div class="container">
-      <a href="#" class="logo">Bairro São Cristóvão</a>
-      <nav class="main-nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="https://www.google.com/maps/place/Bairro+São+Cristóvão/" target="_blank">Localização</a></li>
-          <li><a href="sobre.html">História de Capanema e do Bairro São Cristóvão</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  
+  <title>Colégio - Bairro São Cristóvão</title>
   <style>
-    /* Reset de margens e padding */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
-    /* Estilo do corpo */
     body {
       font-family: 'Arial', sans-serif;
       background-color: #f4f4f4;
       color: #333;
       line-height: 1.6;
+      text-align: center;
     }
 
-    /* Estilo do cabeçalho */
     .site-header {
       background-color: #4CAF50;
       color: #fff;
@@ -46,7 +24,7 @@
     .container {
       width: 80%;
       margin: 0 auto;
-      max-width: 1200px;
+      max-width: 1000px;
     }
 
     .logo {
@@ -59,11 +37,13 @@
     .main-nav ul {
       list-style: none;
       display: flex;
-      justify-content: flex-end;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 10px;
     }
 
     .main-nav ul li {
-      margin-left: 20px;
+      margin: 10px;
     }
 
     .main-nav ul li a {
@@ -79,7 +59,6 @@
       background-color: #333;
     }
 
-    /* Estilos para o conteúdo principal */
     .content {
       padding: 50px 0;
       background-color: #fff;
@@ -89,96 +68,78 @@
     h1 {
       font-size: 36px;
       color: #333;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
 
     p {
       font-size: 18px;
       margin-bottom: 15px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
-    /* Seção de destaques */
-    .highlights {
+    .button.primary {
+      padding: 14px 36px;
+      font-weight: 700;
+      border-radius: 30px;
+      cursor: pointer;
+      border: none;
+      display: inline-block;
+      text-decoration: none;
+      background-color: #4caf50;
+      color: #004d40;
+      font-size: 1.1rem;
+      box-shadow: 0 6px 15px rgba(0, 77, 64, 0.5);
       margin-top: 30px;
+      transition: background-color 0.3s ease;
     }
 
-    .highlight {
-      background-color: #f4f4f4;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 5px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    .button.primary:hover {
+      background-color: #76e0cb;
     }
 
-    .highlight h3 {
-      color: #2e7d32;
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
-
-    .highlight p {
-      font-size: 16px;
-      color: #555;
-    }
-
-    /* Rodapé */
     footer {
       background-color: #2e7d32;
       color: #fff;
       text-align: center;
       padding: 20px;
-    }
-
-    footer p {
-      font-size: 16px;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
+  <header class="site-header">
+    <div class="container">
+      <a href="#" class="logo">Bairro São Cristóvão</a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="https://www.google.com/maps/place/Bairro+São+Cristóvão/" target="_blank" rel="noopener noreferrer">Localização</a></li>
+          <li><a href="sobre.html">História</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-  <!-- Seção principal -->
   <main class="content">
     <div class="container">
-      <h1>Bem-vindo ao Bairro São Cristóvão</h1>
-      <p>O <strong>Colégio Estadual São Cristóvão</strong> de Capanema, no Paraná, é uma instituição de ensino pública bastante importante na região. Fundado com o objetivo de oferecer educação básica e de qualidade para os estudantes da cidade e da região, o colégio tem uma longa trajetória na formação de jovens e adultos, com destaque para a educação no ensino fundamental e médio.</p>
-
+      <h1>Colégio Estadual São Cristóvão</h1>
+      <p>O Colégio Estadual São Cristóvão de Capanema, no Paraná, é uma instituição de ensino pública bastante importante na região. Fundado com o objetivo de oferecer educação básica e de qualidade para os estudantes da cidade e da região, o colégio tem uma longa trajetória na formação de jovens e adultos, com destaque para a educação no ensino fundamental e médio.</p>
       <p>Esse colégio é parte do sistema estadual de ensino, sendo vinculado à Secretaria de Estado da Educação do Paraná. Isso significa que ele segue a mesma diretriz pedagógica adotada pelo governo do estado, com currículos voltados para a formação integral dos alunos, que inclui tanto a parte acadêmica quanto a formação cidadã.</p>
+      <p>Além das aulas regulares, o colégio muitas vezes se envolve em atividades extracurriculares, como feiras de ciências, esportes, eventos culturais e sociais. Essas atividades enriquecem a formação dos estudantes e promovem um ambiente de aprendizado mais dinâmico e interativo.</p>
+      <p>O colégio busca se modernizar com o tempo, oferecendo infraestrutura adequada para a realização de atividades pedagógicas, como laboratórios de informática, quadras esportivas e espaços para práticas culturais.</p>
+      <p>Mais do que um espaço de aprendizado, o Colégio Estadual São Cristóvão é um pilar da comunidade local, contribuindo para a formação de cidadãos conscientes, críticos e preparados para os desafios do futuro.</p>
 
-      <section class="highlights">
-        <h2>Alguns pontos interessantes sobre a escola e a cidade de Capanema</h2>
-        
-        <div class="highlight">
-          <h3>Cidade de Capanema</h3>
-          <p>Capanema é uma cidade no sudoeste do Paraná, conhecida pela sua história ligada à agricultura, principalmente o cultivo de grãos como soja, milho e feijão. Ela também possui uma infraestrutura voltada para o turismo rural e ecoturismo, dada a proximidade com áreas de mata e reservas naturais.</p>
-        </div>
-
-        <div class="highlight">
-          <h3>Educação de qualidade</h3>
-          <p>O Colégio Estadual São Cristóvão é uma referência em Capanema por oferecer um ensino de qualidade, preparando os alunos para os desafios do mercado de trabalho e para a continuidade de seus estudos em nível superior.</p>
-        </div>
-
-        <div class="highlight">
-          <h3>Atividades complementares</h3>
-          <p>Além das aulas regulares, o colégio muitas vezes se envolve em atividades extracurriculares, como feiras de ciências, esportes, eventos culturais e sociais. Essas atividades enriquecem a formação dos estudantes e promovem um ambiente de aprendizado mais dinâmico e interativo.</p>
-        </div>
-
-        <div class="highlight">
-          <h3>Infraestrutura</h3>
-          <p>Como muitos colégios estaduais no Paraná, o São Cristóvão busca se modernizar com o tempo, oferecendo infraestrutura adequada para a realização de atividades pedagógicas, como laboratórios de informática, quadras esportivas e espaços para práticas culturais.</p>
-        </div>
-      </section>
-
-      <p>Se você tiver interesse em algum aspecto mais específico, posso tentar te ajudar a encontrar mais informações ou detalhes sobre a cidade ou a escola.</p>
+      <!-- Botão funcional com localização -->
+      <a href="https://www.google.com/maps/place/Colégio+Estadual+São+Cristóvão+de+Capanema/" class="button primary" target="_blank" rel="noopener noreferrer">Ver Localização</a>
     </div>
   </main>
 
-  <!-- Rodapé -->
   <footer>
     <div class="container">
       <p>&copy; 2025 Bairro São Cristóvão - Todos os direitos reservados.</p>
     </div>
   </footer>
-  
 </body>
 </html>
-
